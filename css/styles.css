@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../icons/beautiful-view-mountains-covered-snow-annapurna-conservation-area-chhusang-nepal.jpg');
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+    text-align: center;
+    gap: 32em;
+}
+
+input {
+    background-color: rgba(11, 11, 11, 0.5);
+    width: 13em;
+    height: 2em;
+    border-radius: 3em;
+    border: none;
+    text-align: center;
+    font-size: 1.15em;
+}
+
+input::placeholder {
+    color: white;
+}
+
+div.input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    transition: transform 250ms, opacity 400ms;
+    padding-top: 5%;
+    gap: 1em;
+}
+
+div.input:hover {
+    transform: scale(1.2);
+}
+
+div#informacoes {
+    visibility:hidden;
+}
+
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.infos {
+    gap: 3em;
+}
+
+div#informacoes {
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 7, 66));
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        gap: 9.2em;
+    }
+    div#informacoes {
+        flex-direction: column;
+        height: 100%;
+    }
+    
+}
